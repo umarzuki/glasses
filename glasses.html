@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Glasses</title>
+</head>
+
+<!--  reference: http://stackoverflow.com/questions/18110478/if-variable-equals-the-number-1
+      Counts to 8 (glasses), if more than 8 (9), reset
+-->
+
+<body>
+    <script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        if (clicks == 9) {clicks = 0; window.alert("8 glasses");}
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <button type="button" onClick="onClick()">Drank 1 Glass</button>
+    <p>Glasses: <a id="clicks">0</a></p>
+
+</body></html>
